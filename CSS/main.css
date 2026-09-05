@@ -298,10 +298,76 @@ a.property-type-item:hover i {
 
 .hover-bg-light {
   transition: background-color 0.2s ease;
+  cursor: pointer;
 }
 
 .hover-bg-light:hover {
+  background-color: #f8fafc;
+}
+
+/* Featured Properties Mega Menu Item Hover */
+a.featured-property-item {
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.featured-property-item:hover {
+  background-color: #f8fafc;
+  cursor: pointer;
+}
+
+/* Resources Cards Hover Styling */
+a.resource-card {
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+a.resource-card .resource-card-title {
+  color: #212529;
+  transition: color 0.3s ease;
+}
+
+a.resource-card .resource-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+a.resource-card:hover .resource-arrow {
+  transform: translateX(4px);
+}
+
+/* Resource Card 1: Violet (Buying Guide) */
+a.resource-card-violet:hover {
   background-color: #f5f3ff;
+  border-color: #ddd6fe;
+}
+
+a.resource-card-violet:hover .resource-card-title {
+  color: #7c3aed;
+}
+
+/* Resource Card 2: Green (Investment Tips) */
+a.resource-card-green:hover {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+a.resource-card-green:hover .resource-card-title {
+  color: #16a34a;
+}
+
+/* Resource Card 3: Purple (Market Reports) */
+a.resource-card-purple:hover {
+  background-color: #faf5ff;
+  border-color: #e9d5ff;
+}
+
+a.resource-card-purple:hover .resource-card-title {
+  color: #9333ea;
 }
 
 /* Mobile Navbar Toggler Icon Switch */
