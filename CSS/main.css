@@ -188,19 +188,15 @@ textarea.form-control {
 }
 
 /* Active & Hover Navbar Colors */
-.navbar .nav-link.active,
-.navbar .nav-link-custom.active,
-.navbar .nav-link:hover,
-.navbar .nav-link-custom:hover,
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link-custom.active,
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link-custom:hover,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link-custom.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link-custom:hover,
+.navbar .navbar-nav .show > .nav-link-custom,
+.navbar .navbar-nav .show > .nav-link,
 .nav-link-custom.active,
-.nav-link-custom:hover,
-.show > .nav-link-custom,
-.show > .nav-link {
-  color: #7c3aed !important;
+.nav-link-custom:hover {
+  color: #7c3aed;
 }
 
 .nav-link-custom.active::after,
@@ -234,57 +230,57 @@ textarea.form-control {
 
 /* Desktop Navbar & Mega Menu Styling */
 @media (min-width: 992px) {
-  .dropdown-mega-parent {
-    position: static !important;
+  header.navbar .navbar-collapse .dropdown-mega-parent {
+    position: static;
     display: flex;
     align-items: center;
   }
 
-  .mega-menu-content {
+  header.navbar .navbar-collapse .dropdown-menu.mega-menu-content {
     display: none;
     opacity: 0;
     visibility: hidden;
-    position: fixed !important;
-    top: 80px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 1080px !important;
-    max-width: 92vw !important;
-    background: #ffffff !important;
-    border-radius: 1rem !important;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.22) !important;
-    padding: 1.5rem 1.75rem !important;
-    z-index: 1050 !important;
-    margin-top: 0 !important;
-    border: 1px solid #e2e8f0 !important;
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1080px;
+    max-width: 92vw;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.22);
+    padding: 1.5rem 1.75rem;
+    z-index: 1050;
+    margin-top: 0;
+    border: 1px solid #e2e8f0;
     transition: opacity 0.2s ease, visibility 0.2s ease;
   }
 
-  .mega-menu-content.show {
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+  header.navbar .navbar-collapse .dropdown-menu.mega-menu-content.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
   }
 
-  .mega-mobile-section {
-    background: transparent !important;
-    padding: 0 !important;
-    border-radius: 0 !important;
-    border: none !important;
+  header.navbar .mega-mobile-section {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    border: none;
   }
 }
 
 /* Property Types Hover Utility - Pointer Cursor & Purple Text */
-.property-type-item {
-  cursor: pointer !important;
+a.property-type-item {
+  cursor: pointer;
   transition: color 0.2s ease;
 }
 
-.property-type-item:hover,
-.property-type-item:hover span,
-.property-type-item:hover i {
-  color: #7c3aed !important;
-  cursor: pointer !important;
+a.property-type-item:hover,
+a.property-type-item:hover span,
+a.property-type-item:hover i {
+  color: #7c3aed;
+  cursor: pointer;
 }
 
 /* Helper hover utility for mega menu links */
@@ -332,24 +328,24 @@ textarea.form-control {
     overflow-y: auto;
   }
 
-  #header-navbar .navbar-nav {
+  #header-navbar ul.navbar-nav {
     gap: 0.35rem;
-    display: block !important;
-    width: 100% !important;
+    display: block;
+    width: 100%;
   }
 
-  #header-navbar .nav-item {
-    display: block !important;
-    width: 100% !important;
+  #header-navbar ul.navbar-nav li.nav-item {
+    display: block;
+    width: 100%;
   }
 
-  #header-navbar .dropdown-mega-parent {
-    display: block !important;
-    width: 100% !important;
-    position: relative !important;
+  #header-navbar ul.navbar-nav li.dropdown-mega-parent {
+    display: block;
+    width: 100%;
+    position: relative;
   }
 
-  #header-navbar .nav-link-custom {
+  #header-navbar a.nav-link-custom {
     padding: 0.85rem 1.25rem;
     border-radius: 0.65rem;
     font-size: 1.05rem;
@@ -362,52 +358,52 @@ textarea.form-control {
     transition: background-color 0.2s ease, color 0.2s ease;
   }
 
-  #header-navbar .nav-link-custom::after,
-  #header-navbar .nav-link-custom.active::after,
-  #header-navbar .nav-link-custom:hover::after {
+  #header-navbar a.nav-link-custom::after,
+  #header-navbar a.nav-link-custom.active::after,
+  #header-navbar a.nav-link-custom:hover::after {
     display: none;
   }
 
-  #header-navbar .nav-link-custom.active,
-  #header-navbar .nav-link-custom:hover,
-  #header-navbar .nav-link.active,
-  #header-navbar .show > .nav-link-custom {
-    background-color: #f5f3ff !important;
-    color: #7c3aed !important;
+  #header-navbar a.nav-link-custom.active,
+  #header-navbar a.nav-link-custom:hover,
+  #header-navbar a.nav-link.active,
+  #header-navbar .show > a.nav-link-custom {
+    background-color: #f5f3ff;
+    color: #7c3aed;
   }
 
   /* Responsive Mega Menu inside mobile collapse drawer */
-  #header-navbar .mega-menu-content {
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    transform: none !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    float: none !important;
-    box-shadow: none !important;
-    margin-top: 0.5rem !important;
-    padding: 0 !important;
-    border-radius: 0 !important;
-    background: transparent !important;
-    border: none !important;
+  #header-navbar div.mega-menu-content {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    float: none;
+    box-shadow: none;
+    margin-top: 0.5rem;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    border: none;
     display: none;
   }
 
-  #header-navbar .mega-menu-content.show {
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+  #header-navbar div.mega-menu-content.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
   }
 
-  .mega-mobile-section {
-    background: #f8fafc !important;
-    border-radius: 1rem !important;
-    padding: 1.25rem !important;
-    border: 1px solid #f1f5f9 !important;
-    margin-bottom: 0.75rem !important;
-    width: 100% !important;
+  #header-navbar .mega-mobile-section {
+    background: #f8fafc;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    border: 1px solid #f1f5f9;
+    margin-bottom: 0.75rem;
+    width: 100%;
   }
 }
 
