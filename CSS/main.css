@@ -6,6 +6,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
   overflow-x: hidden;
+  background-color: #581c87;
 }
 
 body {
@@ -825,4 +826,10 @@ footer .social-btn-footer:hover {
     left: 0.75rem;
     bottom: 0.75rem;
   }
+}
+
+footer {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -10px;
 }
